@@ -1,0 +1,218 @@
+
+.home{
+
+  .info-section{
+    padding: 55px;
+    width: 35%;
+
+  }
+  .content-area{
+    background: $color3;
+    margin-left: 35%;
+    width: 65%;
+    background: whitesmoke;
+    height: 100%;
+
+    // padding: 0 0 0 25%;
+    .img-container{
+      display: inline-block;
+      width: 30%;
+      position: relative;
+      height: 100%;
+      .user-img{
+        position: absolute;
+        top: 56px;
+        left: -200px;
+          width: 400px;
+          height: calc(100% - 112px);
+          background: url(https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/18699358_1517246684966456_2589842392286640115_o.jpg?_nc_cat=101&_nc_ohc=D0Z5edCZJh0AX9nUfew&_nc_ht=scontent-dfw5-1.xx&oh=bfc0a3f0a08967f4dbfaea45dd8c5416&oe=5E982795) no-repeat center center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          -webkit-box-shadow: 9px 20px 74px 6px rgba(0,0,0,0.35);
+          -moz-box-shadow: 9px 20px 74px 6px rgba(0,0,0,0.35);
+          box-shadow: 9px 20px 74px 6px rgba(0,0,0,0.35);
+          filter: grayscale(100%);
+      }
+    }
+
+    .profile-section{
+      display: inline-block;
+      vertical-align: top;
+      padding: 20% 0 0 0;
+      max-width: 500px;
+      .profile{
+        h1{
+          font-size: 2.3rem;
+          font-weight: 500;
+          line-height: 1.0;
+          margin: 0 0 1rem;
+          span{
+            color: $color1;
+          }
+        }
+        h5{
+          font-size: 1.1rem;
+          margin: 0 0 2rem;
+        }
+        p{
+          color: $color4;
+          font-weight: 300;
+          line-height: 1.4;
+          margin: 0 0 2rem;
+        }
+
+      }
+    }
+  }
+}
+
+// Phone-- this size break is for phone sized devices
+@media (max-width: 767px) {
+  .home{
+    .menu-icon{
+      top: 7;
+      right: 15px;
+      position: absolute;
+    }
+    .content-area{
+      height: auto;
+      &:after{
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+    .info-section{
+      padding: 10px 20px;
+      position: static;
+
+      .logo{
+        height: 50px;
+        width: 70px;
+        font-size: .8rem;
+      }
+      .info-box{
+        display: none;
+      }
+    }
+    .content-area{
+      margin-left: 0;
+      width: 100%;
+     .img-container{
+       padding: 56px 20px 0;
+       .user-img{
+         position: static;
+         width: 100%;
+       }
+     }
+     .profile-section{
+       width: 70%;
+       float: right;
+       padding: 20% 20px 0;
+
+     }
+    }
+  }
+}
+
+// tablet this break is for tablet sized devices
+@media (min-width: 768px) and (max-width: 991px){
+ .home{
+   .info-section{
+     width: 30%;
+     padding: 56px 30px;
+     .info-box{
+       .icon-section{
+         a{
+           font-size: 1.2rem;
+         }
+       }
+     }
+   }
+   .content-area{
+     margin-left: 30%;
+     width: 70%;
+    .img-container{
+      padding: 56px 20px 0;
+      .user-img{
+        position: static;
+        width: 100%;
+      }
+    }
+    .profile-section{
+      width: 70%;
+      float: right;
+      padding: 20% 20px 0;
+    }
+   }
+ }
+}
+
+// laptop
+@media (min-width: 992px) and (max-width: 1199px){
+  .home{
+    .info-section{
+      .info-box{
+        .icon-section{
+          a{
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    .content-area{
+     .img-container{
+       padding: 56px 20px 0;
+       float: left;
+       .user-img{
+         position: static;
+         width: 100%;
+       }
+     }
+     .profile-section{
+       width: 70%;
+       float: left;
+       padding: 20% 20px 0;
+       max-width: 800px;
+     }
+    }
+  }
+}
+
+// large screen
+@media (min-width: 1200px) and (max-width: 1500px){
+  .home{
+    .info-section{
+      width: 20%;
+      padding: 56px 30px;
+      .info-box{
+        .icon-section{
+          a{
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    .content-area{
+      width: 80%;
+      margin-left: 20%;
+     .img-container{
+       padding: 56px 20px 0;
+       float: left;
+       .user-img{
+         position: static;
+         width: 100%;
+       }
+     }
+     .profile-section{
+       width: 70%;
+       float: left;
+       padding: 20% 60px 0;
+       max-width: 800px;
+
+     }
+    }
+  }
+}
