@@ -4,13 +4,15 @@
   "main": "index.js",
   "scripts": {
     "watch": "parcel src/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage":"https://RandomToRage.github.io/DevSite",
   "description": "",
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1"
   }
 }
