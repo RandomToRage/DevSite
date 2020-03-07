@@ -2,14 +2,14 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,500,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.css">
-  <link rel="stylesheet" href="/main.77bb5cfd.css">
+  <link rel="stylesheet" href="./scss/main.scss">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <script
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script> -->
 
-<script src="/main.77bb5cfd.js"></script><script src="/work.js"></script></head>
+</head>
 
 <body class="home">
   <div class="menu-icon" onclick="menuDisplay()">
@@ -17,10 +17,10 @@
   </div>
   <section id="menu">
     <nav>
-      <a href="/index.html">Home</a>
-      <a href="/resume.html">Resume</a>
-      <a href="/work.html">Portfolio</a>
-      <a href="/contact.html">Contact</a>
+      <a href="./index.html">Home</a>
+      <a href="./resume.html">Resume</a>
+      <a href="./work.html">Portfolio</a>
+      <a href="./contact.html">Contact</a>
     </nav>
   </section>
   <section class="info-section">
@@ -55,27 +55,30 @@
   </div>
   </section>
 
-  <script type="text/javascript" src="/js.00a46daa.js"></script>
-  <script>/////////This script is to add onclick functionality to the hamburger menu.///
-// var body = document.getElementsByClassName('home')
-var button = document.getElementsByClassName('menu-icon'); // var menu = document.getElementById('menu')
-//
-// function menuDisplay(){
-//   var display = document.getElementById("menu")
-//   document.getElementsByClassName("home").style.toggle("menu-active");
-//
-// }
-// document.getElementsByClassName("menu-icon").onclick = function() {menuDisplay()};
+  <script type="text/javascript" src="./js/index.js"></script>
+  <script>
+  /////////This script is to add onclick functionality to the hamburger menu.///
+  // var body = document.getElementsByClassName('home')
+  var button = document.getElementsByClassName('menu-icon')
+  // var menu = document.getElementById('menu')
+  //
+  // function menuDisplay(){
+  //   var display = document.getElementById("menu")
+  //   document.getElementsByClassName("home").style.toggle("menu-active");
+  //
+  // }
+  // document.getElementsByClassName("menu-icon").onclick = function() {menuDisplay()};
 
-function menuDisplay() {
-  var display = document.querySelector("home");
-  display(function (element) {
-    button.addEventListener("click", function () {
-      button.classList.toggle("menu-active");
+    function menuDisplay(){
+    var display = document.querySelector("home");
+    display(function(element){
+        button.addEventListener("click", function(){
+            button.classList.toggle("menu-active");
+        });
     });
-  });
-}
+};
 
-;</script>
+
+  </script>
   </body>
   </html>
