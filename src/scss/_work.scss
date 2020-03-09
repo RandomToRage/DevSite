@@ -128,10 +128,20 @@
 // Phone-- this size break is for phone sized devices
 @media (min-width: 0px) and (max-width: 767px) {
   .work{
+    html,body{
+      height: auto;
+    }
     .menu-icon{
       top: 7;
       right: 15px;
       position: absolute;
+    }
+    .scroll-section{
+      padding: 50px 20px;
+      width: 100%;
+      height: auto;
+      overflow: auto;
+
     }
     .content-area{
       height: auto;
@@ -141,9 +151,15 @@
         display: table;
         clear: both;
       }
+      .category{
+        width: 100%;
+        .xp-section{
+          grid-template-columns: 1fr;
+        }
+      }
     }
     .info-section{
-      padding: 10px 20px;
+      padding: 10px 30px;
       position: static;
 
       .logo{
@@ -158,29 +174,19 @@
     .content-area{
       margin-left: 0;
       width: 100%;
-     .img-container{
-       width: 100%;
-       padding: 56px 20px 0;
-       height: auto;
-       .form-section{
-         position: static;
-         width: 100%;
-         height: auto;
-         overflow: auto;
-       }
-     }
-     .work-section{
-       width: 100%;
-       float: left;
-       padding: 20% 20px 0;
-
-     }
+      .work-section{
+        .project-section{
+          grid-template-columns: 1fr;
+        }
+      }
     }
   }
 }
 
 // tablet this break is for tablet sized devices
 @media (min-width: 768px) and (max-width: 991px){
+
+
  .work{
    .menu-icon{
      top: 7;
@@ -188,6 +194,8 @@
      position: absolute;
    }
    .info-section{
+     width: 30%;
+     padding: 56px 30px;
      .info-box{
        .icon-section{
          a{
@@ -197,25 +205,28 @@
      }
    }
    .content-area{
+     width: 70%;
      height: auto;
+     margin-left: 30%;
+     .work-section{
+       .project-section{
+         grid-template-columns: 1fr;
+       }
+     }
      &:after{
        content: "";
        display: table;
        clear: both;
      }
+     .category{
+       width: 100%;
+       .xp-section{
+         grid-template-columns: 1fr;
+       }
+     }
 
-    .img-container{
-      padding: 56px 20px 0;
-      width: 100%;
-      height: auto;
-      .form-section{
-        position: static;
-        width: 100%;
-        height: auto;
-        overflow: auto;
-      }
-    }
-    .work-section{
+
+    .resume-section{
       width: 70%;
       float: left;
       padding: 20% 20px 0;
@@ -233,6 +244,7 @@
       position: absolute;
     }
     .info-section{
+      width: 30%;
       .info-box{
         .icon-section{
           a{
@@ -242,66 +254,47 @@
       }
     }
     .content-area{
+      width: 70%;
       height: auto;
+      margin-left: 30%;
+
       &:after{
         content: "";
         display: table;
         clear: both;
       }
-     .img-container{
-       padding: 56px 20px 0;
-       float: left;
-       height: auto;
-       width: 100%;
 
-       .form-section{
-         position: static;
-         width: 100%;
-         float: left;
-         height: auto;
-         overflow: auto;
-       }
-     }
-     .work-section{
+
+     .resume-section{
        width: 70%;
        float: left;
        padding: 20% 20px 0;
-       max-width: 800px;
      }
     }
   }
-}
+ }
 
 // large screen
 @media (min-width: 1200px){
   .work{
+    .menu-icon{
+      top: 7;
+      right: 15px;
+      position: absolute;
+    }
     .info-section{
       .info-box{
         .icon-section{
           a{
-            font-size: 1.7rem;
+            font-size: 1.4rem;
           }
         }
       }
     }
     .content-area{
-     .img-container{
-       padding: 56px 20px 0;
-       float: left;
-       .form-section{
-         // position: static;
-         // width: 100%;
-         left: -150px;
-         width: 400;
-       }
-     }
-     .work-section{
-       width: 70%;
-       float: left;
-       padding: 20% 60px 0;
-       max-width: 800px;
-
-     }
+      width: 75%;
+      height: auto;
+      margin-left: 25%;
     }
   }
 }
@@ -318,23 +311,9 @@
       }
     }
     .content-area{
-     .img-container{
-       padding: 56px 20px 0;
-       float: left;
-       .form-section{
-         // position: static;
-         // width: 100%;
-         left: -250px;
-         width: 500;
-       }
-     }
-     .work-section{
-       width: 70%;
-       float: left;
-       padding: 20% 60px 0;
-       max-width: 800px;
-
-     }
+      width: 70%;
+      height: auto;
+      margin-left: 30%;
     }
   }
 }

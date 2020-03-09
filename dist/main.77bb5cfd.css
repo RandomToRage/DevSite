@@ -343,6 +343,10 @@ table {
       content: "";
       display: table;
       clear: both; }
+    .resume .content-area .category {
+      width: 100%; }
+      .resume .content-area .category .xp-section {
+        grid-template-columns: 1fr; }
     .resume .content-area .resume-section {
       width: 70%;
       float: left;
@@ -350,11 +354,19 @@ table {
 
 @media (min-width: 1200px) {
   .resume .info-section .info-box .icon-section a {
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+  .resume .content-area {
+    width: 70%;
+    height: auto;
+    margin-left: 30%; } }
 
 @media (min-width: 1500px) {
   .resume .info-section .info-box .icon-section a {
-    font-size: 1.7rem; } }
+    font-size: 1.7rem; }
+  .resume .content-area {
+    width: 70%;
+    height: auto;
+    margin-left: 30%; } }
 
 .work .info-section {
   width: 20%; }
@@ -447,18 +459,29 @@ table {
           margin-bottom: 0.7rem; }
 
 @media (min-width: 0px) and (max-width: 767px) {
+  .work html, .work body {
+    height: auto; }
   .work .menu-icon {
     top: 7;
     right: 15px;
     position: absolute; }
+  .work .scroll-section {
+    padding: 50px 20px;
+    width: 100%;
+    height: auto;
+    overflow: auto; }
   .work .content-area {
     height: auto; }
     .work .content-area:after {
       content: "";
       display: table;
       clear: both; }
+    .work .content-area .category {
+      width: 100%; }
+      .work .content-area .category .xp-section {
+        grid-template-columns: 1fr; }
   .work .info-section {
-    padding: 10px 20px;
+    padding: 10px 30px;
     position: static; }
     .work .info-section .logo {
       height: 50px;
@@ -469,43 +492,34 @@ table {
   .work .content-area {
     margin-left: 0;
     width: 100%; }
-    .work .content-area .img-container {
-      width: 100%;
-      padding: 56px 20px 0;
-      height: auto; }
-      .work .content-area .img-container .form-section {
-        position: static;
-        width: 100%;
-        height: auto;
-        overflow: auto; }
-    .work .content-area .work-section {
-      width: 100%;
-      float: left;
-      padding: 20% 20px 0; } }
+    .work .content-area .work-section .project-section {
+      grid-template-columns: 1fr; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .work .menu-icon {
     top: 7;
     right: 15px;
     position: absolute; }
-  .work .info-section .info-box .icon-section a {
-    font-size: 1.2rem; }
+  .work .info-section {
+    width: 30%;
+    padding: 56px 30px; }
+    .work .info-section .info-box .icon-section a {
+      font-size: 1.2rem; }
   .work .content-area {
-    height: auto; }
+    width: 70%;
+    height: auto;
+    margin-left: 30%; }
+    .work .content-area .work-section .project-section {
+      grid-template-columns: 1fr; }
     .work .content-area:after {
       content: "";
       display: table;
       clear: both; }
-    .work .content-area .img-container {
-      padding: 56px 20px 0;
-      width: 100%;
-      height: auto; }
-      .work .content-area .img-container .form-section {
-        position: static;
-        width: 100%;
-        height: auto;
-        overflow: auto; }
-    .work .content-area .work-section {
+    .work .content-area .category {
+      width: 100%; }
+      .work .content-area .category .xp-section {
+        grid-template-columns: 1fr; }
+    .work .content-area .resume-section {
       width: 70%;
       float: left;
       padding: 20% 20px 0; } }
@@ -515,60 +529,42 @@ table {
     top: 7;
     right: 15px;
     position: absolute; }
-  .work .info-section .info-box .icon-section a {
-    font-size: 1.2rem; }
+  .work .info-section {
+    width: 30%; }
+    .work .info-section .info-box .icon-section a {
+      font-size: 1.2rem; }
   .work .content-area {
-    height: auto; }
+    width: 70%;
+    height: auto;
+    margin-left: 30%; }
     .work .content-area:after {
       content: "";
       display: table;
       clear: both; }
-    .work .content-area .img-container {
-      padding: 56px 20px 0;
-      float: left;
-      height: auto;
-      width: 100%; }
-      .work .content-area .img-container .form-section {
-        position: static;
-        width: 100%;
-        float: left;
-        height: auto;
-        overflow: auto; }
-    .work .content-area .work-section {
+    .work .content-area .resume-section {
       width: 70%;
       float: left;
-      padding: 20% 20px 0;
-      max-width: 800px; } }
+      padding: 20% 20px 0; } }
 
 @media (min-width: 1200px) {
+  .work .menu-icon {
+    top: 7;
+    right: 15px;
+    position: absolute; }
   .work .info-section .info-box .icon-section a {
-    font-size: 1.7rem; }
-  .work .content-area .img-container {
-    padding: 56px 20px 0;
-    float: left; }
-    .work .content-area .img-container .form-section {
-      left: -150px;
-      width: 400; }
-  .work .content-area .work-section {
-    width: 70%;
-    float: left;
-    padding: 20% 60px 0;
-    max-width: 800px; } }
+    font-size: 1.4rem; }
+  .work .content-area {
+    width: 75%;
+    height: auto;
+    margin-left: 25%; } }
 
 @media (min-width: 1500px) {
   .work .info-section .info-box .icon-section a {
     font-size: 1.7rem; }
-  .work .content-area .img-container {
-    padding: 56px 20px 0;
-    float: left; }
-    .work .content-area .img-container .form-section {
-      left: -250px;
-      width: 500; }
-  .work .content-area .work-section {
+  .work .content-area {
     width: 70%;
-    float: left;
-    padding: 20% 60px 0;
-    max-width: 800px; } }
+    height: auto;
+    margin-left: 30%; } }
 
 .contact .info-section {
   padding: 55px;
