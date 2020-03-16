@@ -270,6 +270,7 @@
 @media (min-width: 1200px){
   .contact{
     .info-section{
+      overflow-y: hidden;
       .info-box{
         .icon-section{
           a{
@@ -279,6 +280,7 @@
       }
     }
     .content-area{
+
      .img-container{
        padding: 56px 20px 0;
        float: left;
@@ -292,8 +294,12 @@
      .contact-section{
        width: 70%;
        float: left;
-       padding: 20% 60px 0;
+       padding: 00% 60px 0;
        max-width: 800px;
+       .contact-info{
+         padding: 20% 60px 0;
+       }
+
 
      }
     }

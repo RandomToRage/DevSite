@@ -755,8 +755,10 @@ table {
       max-width: 800px; } }
 
 @media (min-width: 1200px) {
-  .contact .info-section .info-box .icon-section a {
-    font-size: 1.7rem; }
+  .contact .info-section {
+    overflow-y: hidden; }
+    .contact .info-section .info-box .icon-section a {
+      font-size: 1.7rem; }
   .contact .content-area .img-container {
     padding: 56px 20px 0;
     float: left; }
@@ -766,8 +768,10 @@ table {
   .contact .content-area .contact-section {
     width: 70%;
     float: left;
-    padding: 20% 60px 0;
-    max-width: 800px; } }
+    padding: 00% 60px 0;
+    max-width: 800px; }
+    .contact .content-area .contact-section .contact-info {
+      padding: 20% 60px 0; } }
 
 @media (min-width: 1500px) {
   .contact .info-section .info-box .icon-section a {
@@ -865,7 +869,7 @@ html, body {
       #menu nav a:hover {
         color: #fefefe; }
 
-#menu.active #menu {
+.menu-active #menu {
   width: 100%;
   top: 0;
   bottom: 0;

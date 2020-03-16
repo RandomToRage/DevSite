@@ -4,15 +4,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.css">
   <link rel="stylesheet" href="scss/main.scss">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <script
+  <script
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script> -->
+  crossorigin="anonymous"></script>
 
 </head>
 
 <body class="home">
-  <div class="menu-icon" onclick="menuDisplay()">
+  <div class="menu-icon">
     <i class="fas fa-hamburger"></i>
   </div>
   <section id="menu">
@@ -29,13 +29,13 @@
       <h4>Email</h4>
       <p>damienjdavis90@gmail.com</p>
       <h4>Phone</h4>
-      <p>(682)-222-2223</p>
+      <p>(682)-227-9701</p>
       <h4>Find Me On</h4>
       <div class="icon-section">
         <a href="#"><i class="fab fa-youtube"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/RandomToRage"><i class="fab fa-github"></i></a>
       </div>
     </div>
   </section>
@@ -56,29 +56,17 @@
   </section>
 
   <script type="text/javascript" src="./js/index.js"></script>
-  <script>
-  /////////This script is to add onclick functionality to the hamburger menu.///
-  // var body = document.getElementsByClassName('home')
-  var button = document.getElementsByClassName('menu-icon')
-  // var menu = document.getElementById('menu')
-  //
-  // function menuDisplay(){
-  //   var display = document.getElementById("menu")
-  //   document.getElementsByClassName("home").style.toggle("menu-active");
-  //
-  // }
-  // document.getElementsByClassName("menu-icon").onclick = function() {menuDisplay()};
 
-    function menuDisplay(){
-    var display = document.querySelector("home");
-    display(function(element){
-        button.addEventListener("click", function(){
-            button.classList.toggle("menu-active");
-        });
-    });
-};
-
-
-  </script>
+<script>
+$('.menu-icon').on('click', function() {
+if($(this).hasClass('active')) {
+$(".home.menu-active").removeClass("menu-active");
+$(".menu-icon.active").removeClass("active");
+} else {
+$('.home').addClass("menu-active");
+$('.menu-icon').addClass("active");
+}
+})
+</script>
   </body>
   </html>
